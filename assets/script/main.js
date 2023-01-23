@@ -110,7 +110,7 @@ function fromBottom() {
 let fillRight = document.querySelector('a:nth-of-type(10)')
 let rightClass = document.querySelector('.fill-right')
 
-fillRight.addEventListener('keyup', fromRight)
+fillRight.addEventListener('blur', fromRight)
 
 function fromRight() {
   rightClass.classList.toggle('active')
