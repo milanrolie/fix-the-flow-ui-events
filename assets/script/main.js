@@ -74,7 +74,7 @@ function fadeIn() {
 let fillLeft = document.querySelector('a:nth-of-type(7)')
 let fillLeftclass = document.querySelector('.fill-left')
 
-fillLeft.addEventListener('click', fromLeft)
+fillLeft.addEventListener('copy', fromLeft)
 
 function fromLeft() {
   fillLeftclass.classList.toggle('active')
@@ -88,7 +88,7 @@ function fromLeft() {
 let fillTop = document.querySelector('a:nth-of-type(8)')
 let topClass = document.querySelector('.fill-top')
 
-fillTop.addEventListener('click', fromTop)
+fillTop.addEventListener('drag', fromTop)
 
 function fromTop() {
   topClass.classList.toggle('active')
@@ -99,7 +99,7 @@ function fromTop() {
 let fillBottom = document.querySelector('a:nth-of-type(9)')
 let bottomClass = document.querySelector('.fill-bottom')
 
-fillBottom.addEventListener('click', fromBottom)
+fillBottom.addEventListener('dragover', fromBottom)
 
 function fromBottom() {
   bottomClass.classList.toggle('active')
@@ -110,7 +110,7 @@ function fromBottom() {
 let fillRight = document.querySelector('a:nth-of-type(10)')
 let rightClass = document.querySelector('.fill-right')
 
-fillRight.addEventListener('click', fromRight)
+fillRight.addEventListener('keyup', fromRight)
 
 function fromRight() {
   rightClass.classList.toggle('active')
